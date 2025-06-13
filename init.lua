@@ -597,6 +597,18 @@ require('lazy').setup({
             },
           },
         },
+        pyright = {
+          settings = {
+            pyright = {
+              disableOrganizeImports = true,
+            },
+            python = {
+              analysis = {
+                ignore = { '*' },
+              },
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
@@ -671,7 +683,8 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        python = { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' },
+        javascript = { 'prettierd', 'prettier', stop_after_first = true },
       },
     },
   },
