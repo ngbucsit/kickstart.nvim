@@ -633,6 +633,7 @@ require('lazy').setup({
 
       require('mason-lspconfig').setup {
         ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
+        automatic_enable = true,
         automatic_installation = false,
         handlers = {
           function(server_name)
@@ -887,7 +888,7 @@ require('lazy').setup({
   --
   require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
-  require 'kickstart.plugins.lint',
+  -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
