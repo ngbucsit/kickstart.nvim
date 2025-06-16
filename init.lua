@@ -849,10 +849,6 @@ require('lazy').setup({
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
-      require('mini.files').setup()
-      vim.keymap.set('n', '\\', function()
-        MiniFiles.open()
-      end)
     end,
   },
 
