@@ -13,5 +13,9 @@ return {
       silent = true,
     },
   },
-  opts = {},
+  opts = {
+    window = {
+      position = 'float',
+    },
+  },
 }
