@@ -6,4 +6,12 @@ return {
     'MunifTanjim/nui.nvim',
   },
   lazy = false,
+  keys = {
+    {
+      '<leader>f',
+      ':Neotree toggle<CR>',
+      silent = true,
+    },
+  },
+  opts = {},
 }
